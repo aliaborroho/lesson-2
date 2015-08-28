@@ -9,7 +9,7 @@ app.get('/*', function (req, res) {
   var path = req.originalUrl;
 
 
-  request('http://addb.absolutdrinks.com/' + path + '?apiKey=23311a636eb84606a031b1292272666b').pipe(res);
+  request('https://api.forecast.io/forecast/4e83a1d3fd0a488fa6b455961502d3173' + path).pipe(res);
 });
 
 
