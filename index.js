@@ -9,7 +9,7 @@ app.get('/*', function (req, res) {
   var path = req.originalUrl;
 
 
-  request('https://api.forecast.io/forecast/4e83a1d3fd0a488fa6b455961502d3173' + path).pipe(res);
+  request('http://api.forecast.io/forecast/4e83a1d3fd0a488fa6b455961502d317' + path).pipe(res);
 });
 
 
